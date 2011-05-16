@@ -1,0 +1,28 @@
+Multichar_Symbols
++BIG
++SMALL
+
+LEXICON Root
+	SuS	Noun;
+	Qagh	Noun;
+	woQ	Noun;
+
+LEXICON Noun
+	Ntype1;
+
+LEXICON Ntype1
+	+BIG:'a' Ntype2;
+	+SMALL:Hom Ntype2;
+	Ntype2;
+	
+LEXICON Ntype2
+	Ntype3;
+
+LEXICON Ntype3
+	Ntype4;
+
+LEXICON Ntype4
+	Ntype5;
+
+LEXICON Ntype5
+	#;
