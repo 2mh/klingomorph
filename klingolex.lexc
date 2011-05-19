@@ -71,7 +71,7 @@ LEXICON Root
 	Verbprefix; 
 	
 LEXICON Verbprefix
-! Verb suffix table 
+! Verb prefix table 
 !				 OBJECT 	  	  	  	  	 
 !  	  	None 	me 	you 	Him/her/it 	us 	you 	them
 !  	I 	jI- 	- 	qa- 	vI- 		- 	Sa- 	vI-
@@ -144,8 +144,9 @@ LEXICON Verb
   [VERB]:0 VerbStems;
 
 LEXICON VerbStems
-	vut Vtype1; ! cook
-	Qoy Vtype1; ! hear
+	vut Vtype1; ! to cook
+	Qoy Vtype1; ! to hear
+	yaj Vtype1; ! to understand
 
 LEXICON NounStems
 	SuS@U.type.else@ Noun; ! wind
@@ -199,7 +200,7 @@ LEXICON Vtype1
 ! Volition / predisposition
 LEXICON Vtype2
 	[need]:nlS Vtype3;
-	[qang]:willing Vtype3;
+	[willing]:qang Vtype3;
 	[prepared]:rup Vtype3; ! in the sense of readiness
 	[setup]:beH Vtype3;    ! in the sense of readiness
 	[afraid]:vlp Vtype3;
