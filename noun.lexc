@@ -1,7 +1,9 @@
 Multichar_Symbols
+! For noun stuff
 +BIG
 +SMALL
 +NOUN
+! For verbal stuff
 +oneself
 +oneanother
 +need
@@ -11,6 +13,24 @@ Multichar_Symbols
 +afraid
 +statechange
 +resume
++cause
++indefiniteSubject
++ability
++clearly
++certainly
++apparently
++perfective
++done
++continuous
++progressing
++when
++if
++before
++while
++for
++which
++interrogative
++oneWhoDoes
 
 LEXICON Root
 	SuS	Noun;
@@ -37,11 +57,13 @@ LEXICON Ntype4
 LEXICON Ntype5
 	#;
 
+! Oneself / one another
 LEXICON Vtype1
 	+oneself:'egh Vtype2;
 	+oneanother:chuq Vtype2;
 	Vtype2;
 
+! Volition / predisposition
 LEXICON Vtype2
 	+need:nlS Vtype3;
 	+qang:willing Vtype3;
@@ -50,25 +72,49 @@ LEXICON Vtype2
 	+afraid:vlp Vtype3;
 	Vtype3;
 
+! Change
 LEXICON Vtype3
 	+statechange:choH Vtype4;
 	+resume:qa' Vtype4;
 	Vtype4;
 
+! Cause
 LEXICON Vtype4
+	+cause:moH Vtype5;
 	Vtype5;
 
+! Indefinite subject / ability (independend of each other)
 LEXICON Vtype5
+	+indefiniteSubject:lu' Vtype6;
+	+ability:laH Vtype6; ! in the sense of could / being able to
 	Vtype6;
 
+! Qualification
 LEXICON Vtype6
+	+clearly:chu' Vtype7; ! also: perfectly
+	+certainly:bej Vtype7; ! also: undoubtedly
+	+apparently:law' Vtype7;
 	Vtype7;
 
+! Aspect
 LEXICON Vtype7
+	+perfective:pu' Vtype8;	
+	+done:ta' Vtype8;
+	+continuous:taH Vtype8;	
+	+progressing:lH' Vtype8;
 	Vtype8;
 
+! Honorific
 LEXICON Vtype8
+	+honorific:neS Vtype9;
 	Vtype9;
 
 LEXICON Vtype9
-	#;
+	+when:Dl' #;
+	+if:chugh #;
+	+before:pa' #;
+	+while:vlS #;
+	+for:meH #;
+	+which:bogh #;
+	+interrogative:'a' #;	
+	+oneWhoDoes:wl' #; ! one who does, or something that does
