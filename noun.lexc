@@ -157,7 +157,7 @@ LEXICON Ntype2
   +PL:pu' @U.type.being@ Ntype3;
   +PL:Du' @U.type.body@ Ntype3;
   +PL:mey @U.type.else@ Ntype3;
-  Ntype3;
+  +SG:0 Ntype3;
 
 LEXICON Ntype3
   +SoCalled:qoq Ntype4;
