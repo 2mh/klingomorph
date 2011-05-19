@@ -11,3 +11,8 @@ echo ------------------------------------------------------------------
 echo Testing some Klingon verbs:
 up < klingoverbs.txt
 echo ------------------------------------------------------------------
+
+echo Testing some Klingon nouns:
+down < klingonouns
+echo ------------------------------------------------------------------
+
