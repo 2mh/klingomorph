@@ -19,6 +19,9 @@ Multichar_Symbols
 [from]
 [DueTo]
 [intended]
+@U.type.being@
+@U.type.body@
+@U.type.else@
 
 ! For verbal stuff (prefixes)
 [VERB]
@@ -64,10 +67,7 @@ Multichar_Symbols
 [oneWhoDoes]
 
 LEXICON Root
-	SuS	Noun; ! wind
-  qoH @U.type.being@ Noun; ! fool
-	Qagh	Noun; ! error, mistake
-	woQ	Noun; ! authority, power
+  NounStems;
 	Verbprefix; 
 	
 LEXICON Verbprefix
@@ -147,6 +147,12 @@ LEXICON VerbStems
 	vut Vtype1; ! cook
 	Qoy Vtype1; ! hear
 
+LEXICON NounStems
+	SuS@U.type.else@ Noun; ! wind
+  qoH@U.type.else@ Noun; ! fool
+	Qagh@U.type.being@ Noun; ! error, mistake
+	woQ@U.type.else@ Noun; ! authority, power
+
 LEXICON Noun
   [NOUN]:0 Ntype1;
 
@@ -156,9 +162,9 @@ LEXICON Ntype1
   Ntype2;
 	
 LEXICON Ntype2
-  [PL]:pu' @U.type.being@ Ntype3;
-  [PL]:Du' @U.type.body@ Ntype3;
-  [PL]:mey @U.type.else@ Ntype3;
+  [PL]:pu'@U.type.being@ Ntype3;
+  [PL]:Du'@U.type.body@ Ntype3;
+  [PL]:mey@U.type.else@ Ntype3;
   [SG]:0 Ntype3;
 
 LEXICON Ntype3
@@ -171,8 +177,8 @@ LEXICON Ntype4
   [1PERS]:wIj Ntype5;
   [2PERS]:lIj Ntype5;
   [3PERS]:Daj Ntype5;
-  [1PERS]:wl' @U.type.being@ Ntype5; ! TODO overgenerates
-  [2PERS]:lI' @U.type.being@ Ntype5;
+  [1PERS]:wl'@U.type.being@ Ntype5; ! TODO overgenerates
+  [2PERS]:lI'@U.type.being@ Ntype5;
   [close]:vam Ntype5;
   [far]:vetlh Ntype5;
   Ntype5;
