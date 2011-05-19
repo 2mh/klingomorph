@@ -1,8 +1,23 @@
 Multichar_Symbols
 ! For noun stuff
++NOUN
 +BIG
 +SMALL
-+NOUN
++PL
++SG
++SoCalled
++apparent
++definite
++1PERS
++2PERS
++3PERS
++close ! how close the speaker is to the object
++far
++locative
++from
++DueTo
++intended
+
 ! For verbal stuff
 +oneself
 +oneanother
@@ -32,29 +47,48 @@ Multichar_Symbols
 +interrogative
 +oneWhoDoes
 
+
 LEXICON Root
-	SuS	Noun;
-	Qagh	Noun;
-	woQ	Noun;
+	SuS	Noun; ! wind
+  qoH @U.type.being@ Noun; ! fool
+	Qagh	Noun; ! error, mistake
+	woQ	Noun; ! authority, power
 
 LEXICON Noun
-	+NOUN:0 Ntype1;
+  +NOUN:0 Ntype1;
 
 LEXICON Ntype1
-	+BIG:'a' Ntype2;
-	+SMALL:Hom Ntype2;
-	Ntype2;
+  +BIG:'a' Ntype2;
+  +SMALL:Hom Ntype2;
+  Ntype2;
 	
 LEXICON Ntype2
-	Ntype3;
+  +PL:pu' @U.type.being@ Ntype3;
+  +PL:Du' @U.type.body@ Ntype3;
+  +PL:mey @U.type.else@ Ntype3;
+  Ntype3;
 
 LEXICON Ntype3
-	Ntype4;
+  +SoCalled:qoq Ntype4;
+  +apparent:Hey Ntype4;
+  +definite:na' Ntype4;
+  Ntype4;
 
 LEXICON Ntype4
-	Ntype5;
+  +1PERS:wIj Ntype5;
+  +2PERS:lIj Ntype5;
+  +3PERS:Daj Ntype5;
+  +1PERS:wl' @U.type.being@ Ntype5; ! TODO overgenerates
+  +2PERS:lI' @U.type.being@ Ntype5;
+  +close:vam Ntype5;
+  +far:vetlh Ntype5;
+  Ntype5;
 
 LEXICON Ntype5
+  +locative:Daq #;
+  +from:vo' #;
+  +DueTo:mo' #;
+  +intended:vaD #;
 	#;
 
 ! Oneself / one another
