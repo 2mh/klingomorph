@@ -1,65 +1,65 @@
 Multichar_Symbols
 ! For noun stuff
-<NOUN>
-<BIG>
-<SMALL>
-<PL>
-<SG>
-<SoCalled>
-<apparent>
-<definite>
-<1PERS>
-<2PERS>
-<3PERS>
-<close> ! how close the speaker is to the object
-<far>
-<locative>
-<from>
-<DueTo>
-<intended>
+[NOUN]
+[BIG]
+[SMALL]
+[PL]
+[SG]
+[SoCalled]
+[apparent]
+[definite]
+[1PERS]
+[2PERS]
+[3PERS]
+[close] ! how close the speaker is to the object
+[far]
+[locative]
+[from]
+[DueTo]
+[intended]
 
 ! For verbal stuff (prefixes)
-<VERB>
+[VERB]
 
 ! For I, you, he/she/it/, we, you, they we use the markers from the noun stuff,
-! e. g. <1PERS><PL> for we when we the subject.
+! e. g. [1PERS][PL] for we when we the subject.
 ! What follows here are markers for the object.
-<NONE>
-<ME>
-<YOUSG> ! you as object in singular
-<IT> !(or HIM, OR HER)
-<US>
-<YOUPL> ! you as object in plural
-<THEM>
+[NONE]
+[ME]
+[YOUSG] ! you as object in singular
+[IT] !(or HIM, OR HER)
+[US]
+[YOUPL] ! you as object in plural
+[THEM]
 
 ! For verbal stuff (suffixes)
-<oneself>
-<oneanother>
-<need>
-<willing>
-<prepared>
-<setup>
-<afraid>
-<statechange>
-<resume>
-<cause>
-<indefiniteSubject>
-<ability>
-<clearly>
-<certainly>
-<apparently>
-<perfective>
-<done>
-<continuous>
-<progressing>
-<when>
-<if>
-<before>
-<while>
-<for>
-<which>
-<interrogative>
-<oneWhoDoes>
+[oneself]
+[oneanother]
+[need]
+[willing]
+[prepared]
+[setup]
+[afraid]
+[statechange]
+[resume]
+[cause]
+[indefiniteSubject]
+[ability]
+[clearly]
+[certainly]
+[apparently]
+[perfective]
+[done]
+[continuous]
+[progressing]
+[when]
+[if]
+[before]
+[while]
+[for]
+[which]
+[interrogative]
+[oneWhoDoes]
 
 LEXICON Root
 	SuS	Noun; ! wind
@@ -81,167 +81,167 @@ LEXICON Verbprefix
 ! Source: http://www.judion.de/klingon/
 	!---------------------------------------------------------------
 	! First person (sg) is subject:
-	<SG><1PERS><NONE>:jI Verb; 
-	! <SG><1PERS><ME> w/o prefix; implemented via suffix
-	<SG><1PERS><YOUSG>:qa Verb;
-	<SG><1PERS><IT>:vI Verb;
-	! <SG><1PERS><US> w/o prefix; implemented via suffix
-	<SG><1PERS><YOUPL>:Sa Verb;
-	<SG><1PERS><THEM>:vI Verb;
+	[SG][1PERS][NONE]:jI Verb; 
+	! [SG][1PERS][ME] w/o prefix; implemented via suffix
+	[SG][1PERS][YOUSG]:qa Verb;
+	[SG][1PERS][IT]:vI Verb;
+	! [SG][1PERS][US] w/o prefix; implemented via suffix
+	[SG][1PERS][YOUPL]:Sa Verb;
+	[SG][1PERS][THEM]:vI Verb;
 	!---------------------------------------------------------------
 	! Second person (sg) is subject:
-	<SG><2PERS><NONE>:BI Verb;
-	<SG><2PERS><ME>:cho Verb;
-	! <SG><2PERS><YOUSG> w/o prefix; implemented via suffix
-	<SG><2PERS><IT>:Da Verb;
-	<SG><2PERS><US>:ju Verb;
-	! <SG><2PERS><YOUPL> w/o prefix; implemented via suffix
-	<SG><2PERS><THEM>:Da Verb;
+	[SG][2PERS][NONE]:BI Verb;
+	[SG][2PERS][ME]:cho Verb;
+	! [SG][2PERS][YOUSG] w/o prefix; implemented via suffix
+	[SG][2PERS][IT]:Da Verb;
+	[SG][2PERS][US]:ju Verb;
+	! [SG][2PERS][YOUPL] w/o prefix; implemented via suffix
+	[SG][2PERS][THEM]:Da Verb;
 	!---------------------------------------------------------------
 	! Third person (sg) is subject:
-	<SG><3PERS><NONE>:0 Verb;
-	<SG><3PERS><ME>:mu Verb;
-	<SG><3PERS><YOUSG>:Du Verb;
-	<SG><3PERS><IT>:0 Verb;
-	<SG><3PERS><US>:nu Verb;
-	<SG><3PERS><YOUPL>:lI Verb;
-	<SG><3PERS><THEM>:0 Verb;
+	[SG][3PERS][NONE]:0 Verb;
+	[SG][3PERS][ME]:mu Verb;
+	[SG][3PERS][YOUSG]:Du Verb;
+	[SG][3PERS][IT]:0 Verb;
+	[SG][3PERS][US]:nu Verb;
+	[SG][3PERS][YOUPL]:lI Verb;
+	[SG][3PERS][THEM]:0 Verb;
 	!---------------------------------------------------------------
 	! First person (pl) is subject:
-	<PL><1PERS><NONE>:Ma' Verb;
-	! <PL><1PERS><ME> w/o prefix, implemented via suffix
-	<PL><1PERS><YOUSG>:pI Verb;
-	<PL><1PERS><IT>:wI Verb;
-	! <PL><1PERS><US> w/o prefix; implemented via suffix
-	<PL><1PERS><YOUPL>:re Verb;
-	<PL><1PERS><THEM>:DI Verb;
+	[PL][1PERS][NONE]:Ma' Verb;
+	! [PL][1PERS][ME] w/o prefix, implemented via suffix
+	[PL][1PERS][YOUSG]:pI Verb;
+	[PL][1PERS][IT]:wI Verb;
+	! [PL][1PERS][US] w/o prefix; implemented via suffix
+	[PL][1PERS][YOUPL]:re Verb;
+	[PL][1PERS][THEM]:DI Verb;
 	!---------------------------------------------------------------
 	! Second person (pl) is subject:
-	<PL><2PERS><NONE>:Su Verb;
-	<PL><2PERS><ME>:tu Verb;
-	! <PL><2PERS><YOUSG> w/o prefix; implemented via suffix
-	<PL><2PERS><IT>:bo Verb;
-	<PL><2PERS><US>:che Verb;
-	! <PL><2PERS><YOUPL> w/o prefix; implemented via suffix
-	<PL><2PERS><THEM>:Bo Verb;
+	[PL][2PERS][NONE]:Su Verb;
+	[PL][2PERS][ME]:tu Verb;
+	! [PL][2PERS][YOUSG] w/o prefix; implemented via suffix
+	[PL][2PERS][IT]:bo Verb;
+	[PL][2PERS][US]:che Verb;
+	! [PL][2PERS][YOUPL] w/o prefix; implemented via suffix
+	[PL][2PERS][THEM]:Bo Verb;
 	!---------------------------------------------------------------
 	! Third person (pl) is subject:
-	<PL><3PERS><NONE>:0 Verb;
-	<PL><3PERS><ME>:mu Verb;
-	<PL><3PERS><YOUSG>:nI Verb;
-	<PL><3PERS><IT>:lu Verb;
-	<PL><3PERS><US>:nu Verb;
-	<PL><3PERS><YOUPL>:lI Verb;
-	<PL><3PERS><THEM>:0 Verb;
+	[PL][3PERS][NONE]:0 Verb;
+	[PL][3PERS][ME]:mu Verb;
+	[PL][3PERS][YOUSG]:nI Verb;
+	[PL][3PERS][IT]:lu Verb;
+	[PL][3PERS][US]:nu Verb;
+	[PL][3PERS][YOUPL]:lI Verb;
+	[PL][3PERS][THEM]:0 Verb;
 	!---------------------------------------------------------------
 	! For the verbs w/o prefixes	
 	Verb;
 	!---------------------------------------------------------------
 
 LEXICON Verb
-  <VERB>:0 VerbStems;
+  [VERB]:0 VerbStems;
 
 LEXICON VerbStems
 	vut Vtype1; ! cook
 	Qoy Vtype1; ! hear
 
 LEXICON Noun
-  <NOUN>:0 Ntype1;
+  [NOUN]:0 Ntype1;
 
 LEXICON Ntype1
-  <BIG>:'a' Ntype2;
-  <SMALL>:Hom Ntype2;
+  [BIG]:'a' Ntype2;
+  [SMALL]:Hom Ntype2;
   Ntype2;
 	
 LEXICON Ntype2
-  <PL>:pu' @U.type.being@ Ntype3;
-  <PL>:Du' @U.type.body@ Ntype3;
-  <PL>:mey @U.type.else@ Ntype3;
-  <SG>:0 Ntype3;
+  [PL]:pu' @U.type.being@ Ntype3;
+  [PL]:Du' @U.type.body@ Ntype3;
+  [PL]:mey @U.type.else@ Ntype3;
+  [SG]:0 Ntype3;
 
 LEXICON Ntype3
-  <SoCalled>:qoq Ntype4;
-  <apparent>:Hey Ntype4;
-  <definite>:na' Ntype4;
+  [SoCalled]:qoq Ntype4;
+  [apparent]:Hey Ntype4;
+  [definite]:na' Ntype4;
   Ntype4;
 
 LEXICON Ntype4
-  <1PERS>:wIj Ntype5;
-  <2PERS>:lIj Ntype5;
-  <3PERS>:Daj Ntype5;
-  <1PERS>:wl' @U.type.being@ Ntype5; ! TODO overgenerates
-  <2PERS>:lI' @U.type.being@ Ntype5;
-  <close>:vam Ntype5;
-  <far>:vetlh Ntype5;
+  [1PERS]:wIj Ntype5;
+  [2PERS]:lIj Ntype5;
+  [3PERS]:Daj Ntype5;
+  [1PERS]:wl' @U.type.being@ Ntype5; ! TODO overgenerates
+  [2PERS]:lI' @U.type.being@ Ntype5;
+  [close]:vam Ntype5;
+  [far]:vetlh Ntype5;
   Ntype5;
 
 LEXICON Ntype5
-  <locative>:Daq #;
-  <from>:vo' #;
-  <DueTo>:mo' #;
-  <intended>:vaD #;
+  [locative]:Daq #;
+  [from]:vo' #;
+  [DueTo]:mo' #;
+  [intended]:vaD #;
 	#;
 
 ! Oneself / one another
 LEXICON Vtype1
-	<oneself>:'egh Vtype2;
-	<oneanother>:chuq Vtype2;
+	[oneself]:'egh Vtype2;
+	[oneanother]:chuq Vtype2;
 	Vtype2;
 
 ! Volition / predisposition
 LEXICON Vtype2
-	<need>:nlS Vtype3;
-	<qang>:willing Vtype3;
-	<prepared>:rup Vtype3; ! in the sense of readiness
-	<setup>:beH Vtype3;    ! in the sense of readiness
-	<afraid>:vlp Vtype3;
+	[need]:nlS Vtype3;
+	[qang]:willing Vtype3;
+	[prepared]:rup Vtype3; ! in the sense of readiness
+	[setup]:beH Vtype3;    ! in the sense of readiness
+	[afraid]:vlp Vtype3;
 	Vtype3;
 
 ! Change
 LEXICON Vtype3
-	<statechange>:choH Vtype4;
-	<resume>:qa' Vtype4;
+	[statechange]:choH Vtype4;
+	[resume]:qa' Vtype4;
 	Vtype4;
 
 ! Cause
 LEXICON Vtype4
-	<cause>:moH Vtype5;
+	[cause]:moH Vtype5;
 	Vtype5;
 
 ! Indefinite subject / ability (independend of each other)
 LEXICON Vtype5
-	<indefiniteSubject>:lu' Vtype6;
-	<ability>:laH Vtype6; ! in the sense of could / being able to
+	[indefiniteSubject]:lu' Vtype6;
+	[ability]:laH Vtype6; ! in the sense of could / being able to
 	Vtype6;
 
 ! Qualification
 LEXICON Vtype6
-	<clearly>:chu' Vtype7; ! also: perfectly
-	<certainly>:bej Vtype7; ! also: undoubtedly
-	<apparently>:law' Vtype7;
+	[clearly]:chu' Vtype7; ! also: perfectly
+	[certainly]:bej Vtype7; ! also: undoubtedly
+	[apparently]:law' Vtype7;
 	Vtype7;
 
 ! Aspect
 LEXICON Vtype7
-	<perfective>:pu' Vtype8;	
-	<done>:ta' Vtype8;
-	<continuous>:taH Vtype8;	
-	<progressing>:lH' Vtype8;
+	[perfective]:pu' Vtype8;	
+	[done]:ta' Vtype8;
+	[continuous]:taH Vtype8;	
+	[progressing]:lH' Vtype8;
 	Vtype8;
 
 ! Honorific
 LEXICON Vtype8
-	<honorific>:neS Vtype9;
+	[honorific]:neS Vtype9;
 	Vtype9;
 
 ! Syntactic markers
 LEXICON Vtype9
-	<when>:Dl' #;
-	<if>:chugh #;
-	<before>:pa' #;
-	<while>:vlS #;
-	<for>:meH #;
-	<which>:bogh #;
-	<interrogative>:'a' #;	
-	<oneWhoDoes>:wl' #; ! one who does, or something that does
+	[when]:Dl' #;
+	[if]:chugh #;
+	[before]:pa' #;
+	[while]:vlS #;
+	[for]:meH #;
+	[which]:bogh #;
+	[interrogative]:'a' #;	
+	[oneWhoDoes]:wl' #; ! one who does, or something that does
 	#;
