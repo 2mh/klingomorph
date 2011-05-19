@@ -20,7 +20,7 @@ Multichar_Symbols
 [DueTo]
 [intended]
 @U.type.being@
-@U.type.body@
+@U.type.bodypart@
 @U.type.else@
 
 ! For verbal stuff (prefixes)
@@ -163,7 +163,7 @@ LEXICON Ntype1
 	
 LEXICON Ntype2
   [PL]:pu'@U.type.being@ Ntype3;
-  [PL]:Du'@U.type.body@ Ntype3;
+  [PL]:Du'@U.type.bodypart@ Ntype3;
   [PL]:mey@U.type.else@ Ntype3;
   [SG]:0 Ntype3;
 
