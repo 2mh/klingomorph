@@ -1,6 +1,7 @@
 Multichar_Symbols
 +BIG
 +SMALL
++NOUN
 
 LEXICON Root
 	SuS	Noun;
@@ -8,7 +9,7 @@ LEXICON Root
 	woQ	Noun;
 
 LEXICON Noun
-	Ntype1;
+	+NOUN:0 Ntype1;
 
 LEXICON Ntype1
 	+BIG:'a' Ntype2;
