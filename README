@@ -1,5 +1,8 @@
-Ein paar tolle Grundlagen hier:
-* http://17.stuts.de/procs/clauss.html
+Hafner/Marques, as of 16h May 2011
 
-Sehr kewl (bzgl. Suffixe):
+How to use:
+$ foma -l klingomorph.xfst # Or use xfst if you wanna belong to the dark side.
+
+Some foundations for our work can be found here:
+* http://17.stuts.de/procs/clauss.html
 * http://www.judion.de/klingon/

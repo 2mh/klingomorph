@@ -1,0 +1,5 @@
+! Hafner/Marques, as of 16th May 2011
+
+! Let's read in our lexicon, capable of recognizing Klingon words as
+! nouns or verbs
+read lexc < klingolex.lexc
