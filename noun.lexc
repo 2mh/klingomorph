@@ -18,7 +18,21 @@ Multichar_Symbols
 +DueTo
 +intended
 
-! For verbal stuff
+! For verbal stuff (prefixes)
++VERB
+
+! For I, you, he/she/it/, we, you, they we use the markers from the noun stuff,
+! e. g. +1PERS+PL for we when we the subject.
+! What follows here are markers for the object.
++NONE
++ME
++YOUSG ! you as object in singular
++IT !(or HIM, OR HER)
++US
++YOUPL ! you as object in plural
++THEM
+
+! For verbal stuff (suffixes)
 +oneself
 +oneanother
 +need
@@ -47,12 +61,89 @@ Multichar_Symbols
 +interrogative
 +oneWhoDoes
 
-
 LEXICON Root
 	SuS	Noun; ! wind
   qoH @U.type.being@ Noun; ! fool
 	Qagh	Noun; ! error, mistake
 	woQ	Noun; ! authority, power
+	Verbprefix; 
+	
+LEXICON Verbprefix
+! Verb suffix table 
+!				 OBJECT 	  	  	  	  	 
+!  	  	None 	me 	you 	Him/her/it 	us 	you 	them
+!  	I 	jI- 	- 	qa- 	vI- 		- 	Sa- 	vI-
+!  	You 	BI- 	cho- 	- 	Da- 		ju- 	- 	Da-
+! SUBJ	It/(S)He 0 	mu- 	Du- 	0 		nu- 	lI- 	0
+!  	We 	Ma’- 	- 	pI- 	wI- 		- 	re- 	DI-
+! 	You 	Su- 	tu- 	- 	bo- 		che- 	- 	Bo-
+!  	They 	0 	mu- 	nI- 	lu- 		nu- 	lI- 	0
+! Source: http://www.judion.de/klingon/
+	!---------------------------------------------------------------
+	! First person (sg) is subject:
+	+SG+1PERS+NONE:jI Verb; 
+	! +SG+1PERS+ME w/o prefix; implemented via suffix
+	+SG+1PERS+YOUSG:qa Verb;
+	+SG+1PERS+IT:vI Verb;
+	! +SG+1PERS+US w/o prefix; implemented via suffix
+	+SG+1PERS+YOUPL:Sa Verb;
+	+SG+1PERS+THEM:vI Verb;
+	!---------------------------------------------------------------
+	! Second person (sg) is subject:
+	+SG+2PERS+NONE:BI Verb;
+	+SG+2PERS+ME:cho Verb;
+	! +SG+2PERS+YOUSG w/o prefix; implemented via suffix
+	+SG+2PERS+IT:Da Verb;
+	+SG+2PERS+US:ju Verb;
+	! +SG+2PERS+YOUPL w/o prefix; implemented via suffix
+	+SG+2PERS+THEM:Da Verb;
+	!---------------------------------------------------------------
+	! Third person (sg) is subject:
+	+SG+3PERS+NONE:0 Verb;
+	+SG+3PERS+ME:mu Verb;
+	+SG+3PERS+YOUSG:Du Verb;
+	+SG+3PERS+IT:0 Verb;
+	+SG+3PERS+US:nu Verb;
+	+SG+3PERS+YOUPL:lI Verb;
+	+SG+3PERS+THEM:0 Verb;
+	!---------------------------------------------------------------
+	! First person (pl) is subject:
+	+PL+1PERS+NONE:Ma' Verb;
+	! +PL+1PERS+ME w/o prefix, implemented via suffix
+	+PL+1PERS+YOUSG:pI Verb;
+	+PL+1PERS+IT:wI Verb;
+	! +PL+1PERS+US w/o prefix; implemented via suffix
+	+PL+1PERS+YOUPL:re Verb;
+	+PL+1PERS+THEM:DI Verb;
+	!---------------------------------------------------------------
+	! Second person (pl) is subject:
+	+PL+2PERS+NONE:Su Verb;
+	+PL+2PERS+ME:tu Verb;
+	! +PL+2PERS+YOUSG w/o prefix; implemented via suffix
+	+PL+2PERS+IT:bo Verb;
+	+PL+2PERS+US:che Verb;
+	! +PL+2PERS+YOUPL w/o prefix; implemented via suffix
+	+PL+2PERS+THEM:Bo Verb;
+	!---------------------------------------------------------------
+	! Third person (pl) is subject:
+	+PL+3PERS+NONE:0 Verb;
+	+PL+3PERS+ME:mu Verb;
+	+PL+3PERS+YOUSG:nI Verb;
+	+PL+3PERS+IT:lu Verb;
+	+PL+3PERS+US:nu Verb;
+	+PL+3PERS+YOUPL:lI Verb;
+	+PL+3PERS+THEM:0 Verb;
+	!---------------------------------------------------------------
+	! For the verbs w/o prefixes	
+	Verb;
+	!---------------------------------------------------------------
+
+LEXICON Verb
+  +VERB:0 VerbStems;
+
+LEXICON VerbStems
+	vut Vtype1; ! cook
+	Qoy Vtype1; ! hear
 
 LEXICON Noun
   +NOUN:0 Ntype1;
@@ -143,6 +234,7 @@ LEXICON Vtype8
 	+honorific:neS Vtype9;
 	Vtype9;
 
+! Syntactic markers
 LEXICON Vtype9
 	+when:Dl' #;
 	+if:chugh #;
