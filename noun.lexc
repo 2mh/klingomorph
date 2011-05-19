@@ -2,6 +2,15 @@ Multichar_Symbols
 +BIG
 +SMALL
 +NOUN
++oneself
++oneanother
++need
++willing
++prepared
++setup
++afraid
++statechange
++resume
 
 LEXICON Root
 	SuS	Noun;
@@ -26,4 +35,40 @@ LEXICON Ntype4
 	Ntype5;
 
 LEXICON Ntype5
+	#;
+
+LEXICON Vtype1
+	+oneself:'egh Vtype2;
+	+oneanother:chuq Vtype2;
+	Vtype2;
+
+LEXICON Vtype2
+	+need:nlS Vtype3;
+	+qang:willing Vtype3;
+	+prepared:rup Vtype3; ! in the sense of readiness
+	+setup:beH Vtype3;    ! in the sense of readiness
+	+afraid:vlp Vtype3;
+	Vtype3;
+
+LEXICON Vtype3
+	+statechange:choH Vtype4;
+	+resume:qa' Vtype4;
+	Vtype4;
+
+LEXICON Vtype4
+	Vtype5;
+
+LEXICON Vtype5
+	Vtype6;
+
+LEXICON Vtype6
+	Vtype7;
+
+LEXICON Vtype7
+	Vtype8;
+
+LEXICON Vtype8
+	Vtype9;
+
+LEXICON Vtype9
 	#;
