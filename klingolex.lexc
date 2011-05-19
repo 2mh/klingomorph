@@ -19,6 +19,9 @@ Multichar_Symbols
 [from]
 [DueTo]
 [intended]
+@U.type.being@
+@U.type.body@
+@U.type.else@
 
 ! For verbal stuff (prefixes)
 [VERB]
@@ -64,10 +67,7 @@ Multichar_Symbols
 [oneWhoDoes]
 
 LEXICON Root
-	SuS	Noun; ! wind
-  qoH @U.type.being@ Noun; ! fool
-	Qagh	Noun; ! error, mistake
-	woQ	Noun; ! authority, power
+  NounStems;
 	Verbprefix; 
 	
 LEXICON Verbprefix
@@ -146,6 +146,12 @@ LEXICON Verb
 LEXICON VerbStems
 	vut Vtype1; ! cook
 	Qoy Vtype1; ! hear
+
+LEXICON NounStems
+	SuS	@U.type.else@ Noun; ! wind
+  qoH @U.type.else@ Noun; ! fool
+	Qagh	@U.type.being@ Noun; ! error, mistake
+	woQ	@U.type.else@ Noun; ! authority, power
 
 LEXICON Noun
   [NOUN]:0 Ntype1;
