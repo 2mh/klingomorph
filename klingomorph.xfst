@@ -9,7 +9,7 @@ read lexc < klingolex.lexc
 ! Let's read in some test verbs:
 echo ------------------------------------------------------------------
 echo Testing some Klingon verbs:
-apply up < klingoverbs
+up klingoverbs
 echo ------------------------------------------------------------------
 
 echo Testing some Klingon nouns:
