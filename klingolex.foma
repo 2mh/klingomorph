@@ -1,0 +1,9 @@
+read lexc klingolex.lexc
+
+define Infix "[<not]":be'|"[<willNot]":Qo'|"[<undo]":Ha'|"[<emphatic]":qu';
+
+define InfixCombinations [[Infix.u]^{0,4} .o. [$?"[<not]" .o. $?"[<willNot]" .o. $?"[<undo]" .o. $?"[<emphatic]"]] .o. Infix^{0,4};
+
+define Rover "[rover]";
+
+substitute defined InfixCombinations for "[rover]"

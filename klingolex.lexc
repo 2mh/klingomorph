@@ -19,6 +19,7 @@ Multichar_Symbols
 [from]
 [DueTo]
 [intended]
+[rover]
 @U.type.being@
 @U.type.bodypart@
 @U.type.else@
@@ -198,56 +199,88 @@ LEXICON Ntype5
 LEXICON Vtype1
   [oneself]:'egh Vtype2;
   [oneanother]:chuq Vtype2;
-  Vtype2;
+  Vtype2x;
+
+LEXICON Vtype2
+  [rover] Vtype2x;
+  Vtype2x;
 
 ! Volition / predisposition
-LEXICON Vtype2
+LEXICON Vtype2x
   [need]:nlS Vtype3;
   [willing]:qang Vtype3;
   [prepared]:rup Vtype3; ! in the sense of readiness
   [setup]:beH Vtype3;    ! in the sense of readiness
   [afraid]:vlp Vtype3;
-  Vtype3;
+  Vtype3x;
+
+LEXICON Vtype3
+  [rover] Vtype3x;
+  Vtype3x;
 
 ! Change
-LEXICON Vtype3
+LEXICON Vtype3x
   [statechange]:choH Vtype4;
   [resume]:qa' Vtype4;
-  Vtype4;
+  Vtype4x;
+
+LEXICON Vtype4
+  [rover] Vtype4x;
+  Vtype4x;
 
 ! Cause
-LEXICON Vtype4
+LEXICON Vtype4x
   [cause]:moH Vtype5;
-  Vtype5;
+  Vtype5x;
+
+LEXICON Vtype5
+  [rover] Vtype5x;
+  Vtype5x;
 
 ! Indefinite subject / ability (independend of each other)
-LEXICON Vtype5
+LEXICON Vtype5x
   [indefiniteSubject]:lu' Vtype6;
   [ability]:laH Vtype6; ! in the sense of could / being able to
-  Vtype6;
+  Vtype6x;
+
+LEXICON Vtype6
+  [rover] Vtype6x;
+  Vtype6x;
 
 ! Qualification
-LEXICON Vtype6
+LEXICON Vtype6x
   [clearly]:chu' Vtype7; ! also: perfectly
   [certainly]:bej Vtype7; ! also: undoubtedly
   [apparently]:law' Vtype7;
-  Vtype7;
+  Vtype7x;
+
+LEXICON Vtype7
+  [rover] Vtype7x;
+  Vtype7x;
 
 ! Aspect
-LEXICON Vtype7
+LEXICON Vtype7x
   [perfective]:pu' Vtype8;  
   [done]:ta' Vtype8;
   [continuous]:taH Vtype8;  
   [progressing]:lH' Vtype8;
-  Vtype8;
+  Vtype8x;
+
+LEXICON Vtype8
+  [rover] Vtype8x;
+  Vtype8x;
 
 ! Honorific
-LEXICON Vtype8
+LEXICON Vtype8x
   [honorific]:neS Vtype9;
-  Vtype9;
+  Vtype9x;
+
+LEXICON Vtype9
+  [rover] Vtype9x;
+  Vtype9x;
 
 ! Syntactic markers
-LEXICON Vtype9
+LEXICON Vtype9x
   [when]:Dl' #;
   [if]:chugh #;
   [before]:pa' #;
