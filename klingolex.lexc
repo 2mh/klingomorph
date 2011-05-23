@@ -23,6 +23,7 @@ Multichar_Symbols
 @U.type.bodypart@
 @U.type.else@
 @D.type.being@
+@C.type@
 
 ! For verbal stuff (prefixes)
 [VERB]
@@ -160,6 +161,7 @@ LEXICON NounStems
 
 LEXICON Noun
   [NOUN]:0 Ntype1;
+  @C.type@ NounStems; ! type of last one determines suffixes
 
 LEXICON Ntype1
   [BIG]:'a' Ntype2;
