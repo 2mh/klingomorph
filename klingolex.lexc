@@ -19,7 +19,6 @@ Multichar_Symbols
 [from]
 [DueTo]
 [intended]
-[rover]
 @U.type.being@
 @U.type.bodypart@
 @U.type.else@
@@ -67,6 +66,7 @@ Multichar_Symbols
 [which]
 [interrogative]
 [oneWhoDoes]
+[rover]
 
 LEXICON Root
   NounStems;
