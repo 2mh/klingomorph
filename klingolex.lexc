@@ -22,6 +22,7 @@ Multichar_Symbols
 @U.type.being@
 @U.type.bodypart@
 @U.type.else@
+@D.type.being@
 
 ! For verbal stuff (prefixes)
 [VERB]
@@ -165,9 +166,9 @@ LEXICON Ntype1
   Ntype2;
   
 LEXICON Ntype2
-  [PL]:pu'@U.type.being@ Ntype3;
-  [PL]:Du'@U.type.bodypart@ Ntype3;
-  [PL]:mey@U.type.else@ Ntype3;
+  [PL]@U.type.being@:pu'@U.type.being@ Ntype3;
+  [PL]@U.type.bodypart@:Du'@U.type.bodypart@ Ntype3;
+  [PL]@U.type.else@:mey@U.type.else@ Ntype3;
   [SG]:0 Ntype3;
 
 LEXICON Ntype3
@@ -177,11 +178,11 @@ LEXICON Ntype3
   Ntype4;
 
 LEXICON Ntype4
-  [1PERS]:wIj Ntype5;
-  [2PERS]:lIj Ntype5;
+  [1PERS]@D.type.being@:wIj@D.type.being@ Ntype5;
+  [2PERS]@D.type.being@:lIj@D.type.being@ Ntype5;
   [3PERS]:Daj Ntype5;
-  [1PERS]:wl'@U.type.being@ Ntype5; ! TODO overgenerates
-  [2PERS]:lI'@U.type.being@ Ntype5;
+  [1PERS]@U.type.being@:wl'@U.type.being@ Ntype5;
+  [2PERS]@U.type.being@:lI'@U.type.being@ Ntype5;
   [close]:vam Ntype5;
   [far]:vetlh Ntype5;
   Ntype5;
