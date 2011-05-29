@@ -1,0 +1,61 @@
+\documentclass[notes]{beamer}
+\usepackage{beamerthemesplit}
+\usepackage{graphics}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\title{Finite-State Methoden in der Sprachtechnologie
+\\
+``Klingomorph'':
+\\
+\emph{Eine Morphologie (und Morphotaktik) für das (Neu-)Klingonische}}
+\author{Simon Hafner / Hernani Marques}
+\date{29.05.2011}
+
+\frame{\titlepage}
+
+\section{Klingomorph: Goals}
+
+\frame{
+
+\frametitle{Goals}
+
+\begin{itemize}
+\item Erkennung von Verben und Substantiven
+\item Hauptarbeit erledigt in lexc
+\end{itemize}
+}
+
+\section{Klingomorph: Charakteristik des Klingonischen}
+
+\frame{
+
+\frametitle{Charakteristik des Klingonischen (1)}
+
+\begin{itemize}
+\item Das Klingonische ist eine stark \emph{agglutinierende Sprache}
+\item Verben kennen 9 Suffixe (jeweils optional, aber geordnet) und auch Präfixe
+\item Nomen kennen 5 Suffixe (dito)
+\item Bei Verben sind zudem 4 Suffixe (``rovers'') zwischen den anderen Suffixen
+frei setzbar
+\end{itemize}
+}
+
+\section{Klingomorph: Zum Projekt}
+
+\frame{
+
+\frametitle{Zum Projekt}
+
+\begin{itemize}
+\item Unser Projekt ist opensource verfügbar: \url{https://github.com/2mh/klingomorph}
+\item Grossmehrheitlich ist das Projekt in lexc implementiert
+\item Einige Details bzgl. den freien Verbsuffixen oder den zu wählenden Nomensuffixen
+sind in \emph{foma} bzw. \emph{xfst} implementiert
+\end{itemize}
+}
+
+
+
+\end{document}
