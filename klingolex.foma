@@ -1,9 +1,18 @@
+! Hafner/Marques in May/June 2011
+
+! Reading in our lexc lexicon
 read lexc klingolex.lexc
 
+! Two-level morphology (analysis/surface level) for the rovers (only available for verbs); seen in
+! relation to the ordered verb suffixes they can be seen as infixes to them [suffixes]
 define Infix "[<not]":be'|"[<willNot]":Qo'|"[<undo]":Ha'|"[<emphatic]":qu';
 
+! Composition of the rovers above in a way that they can appear almost once ($?) between the
+! verb suffixes
 define InfixCombinations [[Infix.u]^{0,4} .o. [$?"[<not]" .o. $?"[<willNot]" .o. $?"[<undo]" .o. $?"[<emphatic]"]] .o. Infix^{0,4};
 
+! Where rovers are possible there's a marker "[marker]" (multichar symbol)
 define Rover "[rover]";
 
+! Dito
 substitute defined InfixCombinations for "[rover]"

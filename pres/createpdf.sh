@@ -1,5 +1,4 @@
 #!/bin/sh
 BASENAME="110529-hafner+marques--klingomorph"
-latex ${BASENAME}.tex
-dvipdf ${BASENAME}.dvi ${BASENAME}.pdf
+pdflatex ${BASENAME}.tex
 rm -f `ls | grep -v tex | grep -v pdf`

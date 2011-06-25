@@ -1,5 +1,15 @@
-! Hafner/Marques as of 16th May 2011
+! Hafner/Marques in May/June 2011
 
+! We use multichar symbols for the analysis level of
+! our two-level morphology. Temporarly there's also some
+! use of them at both levels, e. g. in case of [rover],
+! which gets replaced with Foma/XFST processing after
+! its generation through this lexc code.
+! Also temporarily mutlichar symbols are in use, because
+! of our use of flag-diacritics -- important for the use
+! of the corresponding suffixes depending on the noun
+! type (ability to speak, no ability to speak, body part)
+! taken.
 Multichar_Symbols
 ! For noun stuff
 [NOUN]
@@ -74,7 +84,7 @@ LEXICON Root
   Verbprefix; 
   
 LEXICON Verbprefix
-! Verb prefix table 
+! Verb prefix table, to allow for subject-object relation
 !         OBJECT                    
 !        None   me   you   Him/her/it   us   you   them
 !    I   jI-   -   qa-   vI-     -   Sa-   vI-
@@ -83,7 +93,7 @@ LEXICON Verbprefix
 !    We   Ma’-   -   pI-   wI-     -   re-   DI-
 !   You   Su-   tu-   -   bo-     che-   -   Bo-
 !    They   0   mu-   nI-   lu-     nu-   lI-   0
-! Source: http://www.judion.de/klingon/
+! Source: http://www.judion.de/klingon/ (with a clean table)
   !---------------------------------------------------------------
   ! First person (sg) is subject:
   [SG][1PERS][NONE]:jI Verb; 
@@ -146,6 +156,7 @@ LEXICON Verbprefix
 LEXICON Verb
   [VERB]:0 VerbStems;
 
+! Verb stems (=infintive forms) implemented; more can be added here
 LEXICON VerbStems
   vut Vtype1; ! to cook
   Qoy Vtype1; ! to hear
@@ -153,33 +164,42 @@ LEXICON VerbStems
   legh Vtype1; ! to see
   ja' Vtype1; to tell
 
+! Noun stems implemented; more can be added here
+! Flag diacritics as mentioned in the README are
+! used here for the first time
 LEXICON NounStems
   SuS@U.type.else@ Noun; ! wind
   qoH@U.type.else@ Noun; ! fool
   Qagh@U.type.being@ Noun; ! error, mistake
   woQ@U.type.else@ Noun; ! authority, power
 
+! Noun compounds are created here; suffixes apply to last
+! stem used
 LEXICON Noun
   [NOUN]:0 Ntype1;
   @C.type@ NounStems; ! type of last one determines suffixes
 
+! Noun suffixes type 1: big/small
 LEXICON Ntype1
   [BIG]:'a' Ntype2;
   [SMALL]:Hom Ntype2;
   Ntype2;
   
+! Noun suffixes type 2: singular/plural
 LEXICON Ntype2
   [PL]@U.type.being@:pu'@U.type.being@ Ntype3;
   [PL]@U.type.bodypart@:Du'@U.type.bodypart@ Ntype3;
   [PL]@U.type.else@:mey@U.type.else@ Ntype3;
   [SG]:0 Ntype3;
 
+! Noun suffixes type 3: so called/apparent/definitive
 LEXICON Ntype3
   [SoCalled]:qoq Ntype4;
   [apparent]:Hey Ntype4;
   [definite]:na' Ntype4;
   Ntype4;
 
+! Noun suffixes type 4: numerus/close/far
 LEXICON Ntype4
   [1PERS]@D.type.being@:wIj@D.type.being@ Ntype5;
   [2PERS]@D.type.being@:lIj@D.type.being@ Ntype5;
@@ -190,6 +210,7 @@ LEXICON Ntype4
   [far]:vetlh Ntype5;
   Ntype5;
 
+! Noun suffixes type 5: locative/from/due to/intended
 LEXICON Ntype5
   [locative]:Daq #;
   [from]:vo' #;
@@ -197,17 +218,18 @@ LEXICON Ntype5
   [intended]:vaD #;
   #;
 
-! Oneself / one another
+! Verb suffixes type 1: oneself/one another
 LEXICON Vtype1
   [oneself]:'egh Vtype2;
   [oneanother]:chuq Vtype2;
   Vtype2x;
 
+! Intermediate/transitional class for rovers
 LEXICON Vtype2
   [rover] Vtype2x;
   Vtype2x;
 
-! Volition / predisposition
+! Verb suffixes type 2: volition/predisposition
 LEXICON Vtype2x
   [need]:nlS Vtype3;
   [willing]:qang Vtype3;
@@ -216,51 +238,56 @@ LEXICON Vtype2x
   [afraid]:vlp Vtype3;
   Vtype3x;
 
+! Intermediate/transitional class for rovers
 LEXICON Vtype3
   [rover] Vtype3x;
   Vtype3x;
 
-! Change
+! Verb suffixes type 3: state change/resume
 LEXICON Vtype3x
   [statechange]:choH Vtype4;
   [resume]:qa' Vtype4;
   Vtype4x;
 
+! Intermediate/transitional class for rovers
 LEXICON Vtype4
   [rover] Vtype4x;
   Vtype4x;
 
-! Cause
+! Verb suffixes type 4: cause
 LEXICON Vtype4x
   [cause]:moH Vtype5;
   Vtype5x;
 
+! Intermediate/transitional class for rovers
 LEXICON Vtype5
   [rover] Vtype5x;
   Vtype5x;
 
-! Indefinite subject / ability (independend of each other)
+! Verb suffixes type 5: indefinite subject/ability (independend of each other)
 LEXICON Vtype5x
   [indefiniteSubject]:lu' Vtype6;
   [ability]:laH Vtype6; ! in the sense of could / being able to
   Vtype6x;
 
+! Intermediate/transitional class for rovers
 LEXICON Vtype6
   [rover] Vtype6x;
   Vtype6x;
 
-! Qualification
+! Verb suffixes type 6: qualification
 LEXICON Vtype6x
   [clearly]:chu' Vtype7; ! also: perfectly
   [certainly]:bej Vtype7; ! also: undoubtedly
   [apparently]:law' Vtype7;
   Vtype7x;
 
+! Intermediate/transitional class for rovers
 LEXICON Vtype7
   [rover] Vtype7x;
   Vtype7x;
 
-! Aspect
+! Verb suffixes type 7: aspect
 LEXICON Vtype7x
   [perfective]:pu' Vtype8;  
   [done]:ta' Vtype8;
@@ -268,20 +295,22 @@ LEXICON Vtype7x
   [progressing]:lH' Vtype8;
   Vtype8x;
 
+! Intermediate/transitional class for rovers
 LEXICON Vtype8
   [rover] Vtype8x;
   Vtype8x;
 
-! Honorific
+! Verb suffixes type 8: honorific (in higher respect of)
 LEXICON Vtype8x
   [honorific]:neS Vtype9;
   Vtype9x;
 
+! Intermediate/transitional class for rovers
 LEXICON Vtype9
   [rover] Vtype9x;
   Vtype9x;
 
-! Syntactic markers
+! Verb suffixes type 9: syntactic features; for sentences
 LEXICON Vtype9x
   [when]:Dl' #;
   [if]:chugh #;
