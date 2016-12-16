@@ -35,21 +35,26 @@ to recognize noun compounds.
 ## Verbs
 Verbs are created by (optionally) attaching prefixes to verb stems and then
 (optionally) appending suffixes to them. There's a huge bunch of prefixes
-possible, which are used to indicate subject and object involved. So
-no special (seperate) pronouns are used normally -- they're incorporated
-into the verbs. There's a matrix, which can be found in the klingomorph.lexc
-file, showing the allowed combinations. For the suffixes the same applies
-as for the nouns. For verbs we have 9 types of suffixes, which don't have to
-be used, but when used have a given order. It's again possible to omit any
-single type, probably creating words which are not used in ``nature''. Something
-special about verbs is that there exist special suffixes called ``rovers'', which
-can appear for only once between any of the 9 verb suffixes (so at 8 positions).
-When such a rover suffix is used between verb suffix type 2 and 3 it changes the
-meaning of verb suffix type 2. The rover suffixes are e. g. used to negate those 
-suffixes or to mark empathy. This we implemented using (genuine) Foma/XFST
-techniques (klingomorph.foma).
+possible, which are used to indicate grammatical subject and object involved.
 
-- Some foundations for our work can be found here:
+So no special (seperate) pronouns are used normally -- they're incorporated
+into the verbs.
+
+There's a matrix, which can be found in the klingomorph.lexc file, showing the 
+allowed combinations. For the suffixes the same applies as for the nouns. For
+verbs we have 9 types of suffixes, which don't have to be used, but when used 
+have a given order. It's again possible to omit any single type, probably 
+creating words which are not used in "nature". A particularity about verbs is 
+that there exist special suffixes called "rovers", which can appear for only 
+once between any of the 9 verb suffixes (i.e. at 8 positions).
+When such a rover suffix is used between verb suffix type 2 and 3, it changes 
+the meaning of verb suffix type 2. The rover suffixes are e.g. used to negate
+those suffixes or to mark empathy. This we implemented using (genuine)
+Foma/XFST techniques (klingomorph.foma).
+
+For some of the foundations we based our work on, please consult the following
+sites:
+
 * http://17.stuts.de/procs/clauss.html
 * http://www.judion.de/klingon/
 
