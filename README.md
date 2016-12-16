@@ -18,7 +18,7 @@ In the Klingon language there are three classes of words:
 Most of the meaning, including syntactic information to build phrases, is 
 encoded directly into the nouns or verbs. However, there exist some kind of 
 particles without any special meaning, that we aren't able to recognize, 
-because we didn't implement these words. Anyhow: those particles, taking 
+because we didn't implement these words. Anyhow: those particles, taken 
 individually, are without own semantic value.
 
 ## Nouns
